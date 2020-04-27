@@ -1,0 +1,325 @@
+:root {
+    --prinary-c: #020094;
+    /*#111115*/
+    --prinary-S: #2200fd;
+    /*b90425;*/
+    --prinary-hover: #673ab7;
+    --prinary-t: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+}
+
+#secLog {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: normal;
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {}
+
+.header {
+    flex: auto;
+    flex-direction: column;
+    color: #fff;
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 60px;
+}
+
+#logo {
+    font-size: 2em;
+    float: left;
+    margin-left: 15px;
+}
+
+#tabs {
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 200px;
+    height: 20px;
+}
+
+#tab-btns {
+    float: right;
+    margin: 20px;
+    margin-right: 5px;
+}
+
+.mid-body {
+    margin-top: 80px;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 80px;
+    color: #fff;
+}
+
+#sectionO {
+    width: 35%;
+    height: 200px;
+    margin-right: 10%;
+    position: absolute;
+}
+
+#sectionT {
+    width: 50%;
+    margin-left: 40%;
+    margin-top: -60px;
+    float: right;
+    position: absolute;
+}
+
+#tabs:hover {
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    border-radius: 20px;
+    border: 0px solid;
+    border-radius: 20px 5px;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*Login design*/
+
+.login {
+    float: right;
+    margin-right: 10%;
+    border-radius: 10;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+    color: #000;
+    background-color: #fff;
+    border: 0px solid;
+    border-radius: 20px 20px;
+}
+
+.login #txt {
+    font-size: 14px;
+    text-align: right;
+    font-weight: normal;
+}
+
+#loginInput {
+    border-color: #f0a;
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.login input {
+    width: 90%;
+    left: 0px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    border: none;
+}
+
+.login input:focus {
+    outline: none;
+}
+
+#subBtn {
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    height: 50px;
+    width: 70%;
+    font-size: 1em;
+    color: #fff;
+}
+
+
+/* forget password Cover*/
+
+.coverCard input:focus {
+    outline: none;
+}
+
+.coverCard #subBtn {
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    height: 50px;
+    width: 70%;
+    font-size: 1em;
+    color: #fff;
+}
+
+h3 {
+    color: var(--prinary-S);
+}
+
+.cover {
+    height: 700px;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    border-radius: 19;
+    position: absolute;
+}
+
+.coverCard input {
+    width: 90%;
+    left: 0px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    border: none;
+}
+
+.coverCard {
+    height: 350px;
+    width: 600px;
+    margin-top: 25%;
+    border-radius: 20;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.coverCardOpt {
+    height: 300px;
+    width: 600px;
+    margin-top: 15%;
+    border-radius: 20;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.proBg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tabl #tabCon {
+    width: 180;
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    padding: 5;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border: 0px solid;
+    border-radius: 40px 20px;
+}
+
+.tabl #tabCon:hover {
+    padding: 20;
+}
+
+.tabl div:hover {
+    background-color: black;
+}
+
+.file_name {
+    align-content: center;
+    margin: 20px;
+}
+
+.file_name #fileName,
+.file_name_data #fileName {
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-width: 0px;
+    padding: 10px;
+}
+
+.file_name #createFile {
+    width: 120px;
+    background: rgb(131, 58, 180);
+    background: -moz-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: -webkit-linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(108deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.9360119047619048) 0%, rgba(252, 176, 69, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    border-width: 0px;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 12.5px;
+    color: blanchedalmond;
+}
+
+.file_name_data #editFile {
+    width: 80px;
+    background: rgb(131, 58, 180);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
+    border-width: 0px;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 12.5px;
+    color: blanchedalmond;
+}
+
+.file_name_data #publicFile {
+    width: 80px;
+    background: rgb(240, 0, 92);
+    border-width: 0px;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 12.5px;
+    color: blanchedalmond;
+}
+
+.code-block-body {
+    flex: 2;
+    flex-direction: row;
+}
+
+textarea {
+    background-color: black;
+    color: blanchedalmond;
+    border-width: 0;
+    padding: 10px;
+    font: 24;
+    width: 90%;
+    margin-top: 20px;
+    flex: 1;
+}
