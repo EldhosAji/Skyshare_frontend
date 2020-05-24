@@ -12,11 +12,11 @@ class Profile extends Component {
     constructor(props){
     super(props);
         this.state={
-            home:true,
+            home:localStorage.getItem('AuthKey')?true:false,
             c_room:false,
             j_room:false,
             code_index:false,
-            login:true,
+            login:false,
             reg:false,
             Stream:'',
     };
@@ -26,11 +26,14 @@ class Profile extends Component {
     }
     _logOut=()=>{
       sessionStorage.removeItem('authKey')
-      this.setState({login:false})
+      localStorage.removeItem('authKey')
+      sessionStorage.removeItem('ideVal')
+      this.setState({login:true})
     }
 render(){
-  if(!this.state.login) return<Redirect to='/'/>
+  if(!sessionStorage.getItem('authKey')||sessionStorage.getItem('authKey')==='nullVal') return <Redirect to='/'/>
   if(this.state.c_room) return<Redirect to='/CreateRoom'/>
+  if(this.state.login) return<Redirect to='/'/>
   if(this.state.j_room) return<Redirect to='/JoinRoom'/>
   if(this.state.code_index) return<Redirect to='/CodeIndex'/>
   return (
@@ -38,7 +41,7 @@ render(){
       <div className='header'>
           <span id="logo" >SkyShare</span>
           <div id="tab-btns">
-          <span id="tabs" onClick={this._logOut}>LOGOUT</span>
+          <span id="tabs" onClick={()=>{this._logOut()}}>LOGOUT</span>
           </div>
       </div>
       <div style={{color:'#fff',alignSelf:'center', position: 'absolute',marginTop:200,marginLeft:'50%',transform: 'translate(-50%, -50%)'}} >
