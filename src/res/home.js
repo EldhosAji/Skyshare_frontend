@@ -3,6 +3,7 @@ import '../App.css';
 import Login from './login';
 import Registration from './registration';
 
+import { Redirect } from 'react-router-dom'
 class Home extends Component {
     constructor(props){
     super(props);
@@ -11,6 +12,7 @@ class Home extends Component {
             about:false,
             login:false,
             reg:false,
+            token:sessionStorage.getItem('authKey')
     };
     };
 
@@ -41,6 +43,9 @@ class Home extends Component {
         this.setState({reg:false})
     }
 render(){
+    if(this.state.token!==null )
+        if(this.state.token!=='nullVal')
+            return <Redirect to='/profile'/>
   return (
     <div className="App">
         
