@@ -33,25 +33,36 @@ class Login extends Component {
             response.json().then(response=>{
                 console.log("Auth : "+response.authToken)
                 sessionStorage.setItem('authKey',response.authToken);
-                localStorage.setItem('authKey',response.authToken)
-                this.setState({redirct:true});
+                if(response.authToken==="nullVal"){
+                    console.log("invalid")
+                    this.setState({email:'',password:''})
+            alert('Invalid email or password')
+                    this.setState({redirct:false});
+                }
+                if((response.authToken).length>12){
+                    console.log("valid")
+                    this.setState({redirct:true});
+                }
                 
             })
         })
         .catch(error=>console.log(error))
 
-        if(!sessionStorage.getItem('authKey')){
-        alert("Invalid username or password")
-        this.setState({email:'',password:''})
-      e.preventDefault();
-        e.stopPropagation();}
+        if(!this.state.redirct){
+            
+            e.preventDefault();
+            e.stopPropagation();
+        }else{
+            console.log("res")
+            
+        }
  }
  _passwordShow=()=>{
     this.setState({show:!this.state.show})
  }
 
-    render(){
-if(this.state.redirct) return <Redirect to='/profile'/>
+  render(){
+    if(this.state.redirct) return <Redirect to='/profile'/>
   return (
   <div>
       <div className="login" style={{width:this.props.width}}>
