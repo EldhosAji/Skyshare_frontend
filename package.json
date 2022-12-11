@@ -15,7 +15,7 @@
     "json-stringify": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "material-icons-react": "^1.0.4",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.9.0",
